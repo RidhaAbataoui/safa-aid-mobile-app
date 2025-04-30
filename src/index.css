@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -97,5 +98,16 @@
 
   body {
     @apply bg-background text-foreground;
+    direction: rtl;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+}
+
+/* Add custom styles for RTL support */
+.rtl {
+  direction: rtl;
+}
+
+.ltr {
+  direction: ltr;
 }

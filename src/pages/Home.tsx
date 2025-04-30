@@ -5,7 +5,7 @@ import { useAuth } from '../contexts/AuthContext';
 import { Button } from '@/components/ui/button';
 import { distributionApi } from '../services/api';
 import { toast } from 'sonner';
-import { Medication, Baby, Bandage, QrCode, LogOut } from 'lucide-react';
+import { Pill, Baby, Bandage, QrCode, LogOut } from 'lucide-react';
 
 const Home = () => {
   const { userId, logout } = useAuth();
@@ -54,7 +54,7 @@ const Home = () => {
           <div className="grid grid-cols-2 gap-4">
             <DistributionButton
               label="دواء"
-              icon={<Medication className="h-10 w-10" />}
+              icon={<Pill className="h-10 w-10" />}
               color="bg-medication"
               onClick={() => handleDistribution('medication')}
             />
